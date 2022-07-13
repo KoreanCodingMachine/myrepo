@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+// 값이 undefined일때 오류방지
+import React from 'react';
+import MyComponent from './component/MyComponent';
+import MyComponent2 from './component/MyComponent2';
+import MyComponent3 from './component/MyComponent3';
+import MyComponent4 from './component/MyComponent4';
+import Say from './component/Say';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Say />
+    </>
   );
-}
+};
 
 export default App;
